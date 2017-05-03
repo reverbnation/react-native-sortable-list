@@ -208,7 +208,7 @@ export default class SortableList extends Component {
       const location = {x: 0, y: 0};
       let resolveLayout;
 
-      if (rowsLayouts) {
+      if (rowsLayouts && rowsLayouts[key]) {
         if (horizontal) {
           style.height = rowHeight;
           location.x = nextX;
